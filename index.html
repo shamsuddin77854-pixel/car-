@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORD RAPTOR | Born to Conquer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">FORD<span>RAPTOR</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Overview</a></li>
+      <li><a href="#models">Lineup</a></li>
+      <li><a href="#specs">Performance</a></li>
+      <li><a href="#tech">Off-Road Tech</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+    <a href="#test-drive" class="btn btn-nav">Test Drive</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">OFF-ROAD SUPERTRUCK</span>
+      <h1>UNLEASH THE <span>BEAST</span></h1>
+      <p>Engineered for extreme terrain with desert-racing DNA, supercharged power, and race-proven FOX Live Valve technology.</p>
+      <div class="hero-actions">
+        <a href="#models" class="btn btn-primary">Explore Models</a>
+        <a href="#test-drive" class="btn btn-secondary">Reserve Yours</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <h2>720<span>HP</span></h2>
+        <p>Supercharged V8</p>
+      </div>
+      <div class="stat-item">
+        <h2>3.7<span>s</span></h2>
+        <p>0-60 MPH (Raptor R)</p>
+      </div>
+      <div class="stat-item">
+        <h2>2.5"</h2>
+        <p>FOX Live Valve Shocks</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Models Lineup Section -->
+  <section id="models" class="section container">
+    <div class="section-title">
+      <h2>CHOOSE YOUR <span>WEAPON</span></h2>
+      <p>Dominance across every scale. Built to thrill on pavement and sand.</p>
+    </div>
+
+    <div class="model-toggle">
+      <button class="tab-btn active" onclick="switchModel('f150')">F-150 RAPTOR R</button>
+      <button class="tab-btn" onclick="switchModel('ranger')">RANGER RAPTOR</button>
+    </div>
+
+    <!-- F-150 Raptor Card -->
+    <div id="f150-card" class="model-card active">
+      <div class="model-img">
+        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80" alt="Ford F-150 Raptor">
+      </div>
+      <div class="model-info">
+        <h3>F-150 RAPTOR R™</h3>
+        <p class="model-desc">The ultimate apex predator of desert racing. Features a 5.2L Supercharged V8 engine pumping out relentless torque and raw exhaust roar.</p>
+        <ul class="spec-list">
+          <li><strong>Engine:</strong> 5.2L Supercharged V8</li>
+          <li><strong>Horsepower:</strong> 720 HP @ 6,650 RPM</li>
+          <li><strong>Torque:</strong> 640 lb-ft</li>
+          <li><strong>Suspension:</strong> FOX Dual-Live Valve Bypass Shocks</li>
+          <li><strong>Tires:</strong> 37" BFGoodrich All-Terrain KO2</li>
+        </ul>
+        <a href="#test-drive" class="btn btn-primary">Book F-150 Raptor</a>
+      </div>
+    </div>
+
+    <!-- Ranger Raptor Card -->
+    <div id="ranger-card" class="model-card hidden">
+      <div class="model-img">
+        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80" alt="Ford Ranger Raptor">
+      </div>
+      <div class="model-info">
+        <h3>RANGER RAPTOR®</h3>
+        <p class="model-desc">Agile, compact power engineered to leap off-road obstacles with precision, powered by a twin-turbocharged EcoBoost engine.</p>
+        <ul class="spec-list">
+          <li><strong>Engine:</strong> 3.0L Twin-Turbo EcoBoost V6</li>
+          <li><strong>Horsepower:</strong> 405 HP @ 5,650 RPM</li>
+          <li><strong>Torque:</strong> 430 lb-ft</li>
+          <li><strong>Suspension:</strong> 2.5" FOX Internal Bypass Shocks</li>
+          <li><strong>Drive Modes:</strong> 7 Selectable Terrain Modes (Inc. Baja)</li>
+        </ul>
+        <a href="#test-drive" class="btn btn-primary">Book Ranger Raptor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Off-Road Technology -->
+  <section id="tech" class="tech-section">
+    <div class="container">
+      <div class="section-title light">
+        <h2>BUILT FOR THE <span>EXTREME</span></h2>
+        <p>Next-level hardware engineered to handle desert jumps and rocky trails.</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon">⚡</div>
+          <h3>FOX™ Live Valve Dampers</h3>
+          <p>Electronically controlled internal bypass dampers adapt 500 times per second to terrain changes, neutralizing impacts instantly.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🏜️</div>
+          <h3>Baja Mode Dynamic Tuning</h3>
+          <p>Sharpens throttle response, keeps turbo spooling, holds transmission gears longer, and tunes suspension specifically for high-speed sand runs.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">🛡️</div>
+          <h3>Heavy-Duty Steel Skid Plates</h3>
+          <p>Full underbody protection covering front bumper, engine, transfer case, and fuel tank for extreme rock-crawling protection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="gallery" class="section container">
+    <div class="section-title">
+      <h2>ACTION <span>GALLERY</span></h2>
+      <p>Click any image to view in full resolution.</p>
+    </div>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" onclick="openLightbox(this.src)" alt="Raptor Off-road">
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80" onclick="openLightbox(this.src)" alt="Raptor Front View">
+      <img src="
+      
